@@ -27,7 +27,7 @@
       }
 
       .form-signin {
-        max-width: 330px;
+        max-width: 35vw;
         padding: 1rem;
       }
 
@@ -124,6 +124,21 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .btn-submit {
+        background-color: #d63384;
+        color: white;
+        font-size: bold;
+      }
+
+      .btn-register {
+        color: #d63384;
+        font-size: bold;
+      }
+
+      .font-size {
+        font-size: 15px;
+      }
     </style>
 
     <!-- Custom styles for this template -->
@@ -136,11 +151,18 @@
     ></script>
 
     <main class="form-signin w-100 m-auto">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-2">
+            <image src="../assets/bons-fluidos-logo.png" width="50"></image>
+          </div>
+          <div class="col-10">
+            <h1 class="h3 mb-3 fw-normal">Faça o Login</h1>
+          </div>
+        </div>
+      </div>
+
       <form>
-        <image src="../assets/bons-fluidos-logo.png" width="100"></image>
-
-        <h1 class="h3 mb-3 fw-normal">Faça o Login</h1>
-
         <div class="form-floating my-3">
           <input
             type="email"
@@ -160,21 +182,28 @@
           <label for="floatingPassword">Senha</label>
         </div>
 
-        <div class="form-check text-start my-2">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value="remember-me"
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Lembrar me
-          </label>
+        <div class="form-check text-start my-2 container">
+          <div class="row">
+            <div class="col-6">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="remember-me"
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Lembrar me
+              </label>
+            </div>
+            <div class="col-6 font-size">
+              <label>Não tem uma conta? </label>
+              <a href="register.html" class="btn-register">Registre-se</a>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-primary w-100 py-2" type="submit">Entrar</button>
-        <button class="btn btn-primary w-100 py-2 my-2" type="submit">
-          Registrar
-        </button>
+        <a href="news.html" class="btn w-100 py-2 btn-submit" type="submit"
+          >Entrar</a
+        >
         <p class="mt-5 mb-3 text-body-secondary">&copy; 2023</p>
       </form>
     </main>
