@@ -6,12 +6,8 @@
     <meta charset="utf-8" />
     <meta name="Visualizarport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.118.2" />
-    <title>Bons Fluídos - Home</title>
+
+    <title>Bons Fluídos - Notícias</title>
 
     <link
       rel="canonical"
@@ -21,6 +17,11 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
     <link
@@ -113,7 +114,7 @@
       }
 
       .news-view {
-        background-color: blue;
+        background-color: purple;
         color: white;
         font-size: bold;
         margin: 5px;
@@ -131,6 +132,11 @@
         font-size: 18px;
         text-decoration: inherit;
       }
+
+      .icon {
+        color: white;
+        font-size: 18px;
+      }
     </style>
   </head>
 
@@ -143,21 +149,37 @@
 
     <header data-bs-theme="dark">
       <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex align-items-center justify-content-start">
-          <a
-            href="news.html"
-            class="navbar-brand d-flex align-items-center navbar-title"
-          >
-            <image
-              class="mx-3"
-              src="../assets/bons-fluidos-logo.png"
-              width="60"
-            ></image>
-          </a>
+        <div
+          class="container d-flex align-items-center justify-content-space-between"
+        >
+          <div class="d-flex align-items-center">
+            <a
+              href="news.html"
+              class="navbar-brand d-flex align-items-center navbar-title"
+            >
+              <image
+                class="mx-3"
+                src="../assets/bons-fluidos-logo.png"
+                width="60"
+              ></image>
+            </a>
 
-          <a href="news.html" class="navbar-title mx-3">Notícias</a>
-          <a href="about.html" class="navbar-title mx-3">Sobre</a>
-          <a href="logs.html" class="navbar-title mx-3">Logs</a>
+            <a href="news.html" class="navbar-title mx-3">
+              <i class="bi-newspaper icon mx-2"></i>
+              Notícias</a
+            >
+
+            <a href="about.html" class="navbar-title mx-3">
+              <i class="bi-info-circle icon mx-2"></i>Sobre</a
+            >
+            <a href="logs.html" class="navbar-title mx-3">
+              <i class="bi-person-lines-fill icon mx-2"></i>Logs</a
+            >
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi-box-arrow-in-left icon"></i>
+            <a href="sign-in.html" class="navbar-title mx-2">Sair</a>
+          </div>
         </div>
       </div>
     </header>
@@ -213,10 +235,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -234,7 +258,7 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>
@@ -258,10 +282,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -279,7 +305,7 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>
@@ -303,55 +329,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <p>
-                        <a href="view-news.html" class="btn my-2 news-view"
-                          >Visualizar</a
-                        >
-                      </p>
-                      <p>
-                        <a href="edit-news.html" class="btn my-2 news-update"
-                          >Editar</a
-                        >
-                      </p>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <h6 class="card-title">Titulo Noticia</h6>
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -368,95 +351,7 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <p>
-                        <a href="view-news.html" class="btn my-2 news-view"
-                          >Visualizar</a
-                        >
-                      </p>
-                      <p>
-                        <a href="edit-news.html" class="btn my-2 news-update"
-                          >Editar</a
-                        >
-                      </p>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <p>
-                        <a href="view-news.html" class="btn my-2 news-view"
-                          >Visualizar</a
-                        >
-                      </p>
-                      <p>
-                        <a href="edit-news.html" class="btn my-2 news-update"
-                          >Editar</a
-                        >
-                      </p>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>
@@ -481,10 +376,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -501,7 +398,7 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>
@@ -525,10 +422,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -545,7 +444,7 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>
@@ -569,10 +468,12 @@
                   </text>
                 </svg>
                 <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -589,7 +490,146 @@
                         >
                       </p>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
+                    <small class="text-body-secondary">22/11/2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
+                  <p class="card-text">
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <p>
+                        <a href="view-news.html" class="btn my-2 news-view"
+                          >Visualizar</a
+                        >
+                      </p>
+                      <p>
+                        <a href="edit-news.html" class="btn my-2 news-update"
+                          >Editar</a
+                        >
+                      </p>
+                    </div>
+                    <small class="text-body-secondary">22/11/2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
+                  <p class="card-text">
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <p>
+                        <a href="view-news.html" class="btn my-2 news-view"
+                          >Visualizar</a
+                        >
+                      </p>
+                      <p>
+                        <a href="edit-news.html" class="btn my-2 news-update"
+                          >Editar</a
+                        >
+                      </p>
+                    </div>
+                    <small class="text-body-secondary">22/11/2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Thumbnail
+                  </text>
+                </svg>
+                <div class="card-body">
+                  <h6 class="card-title">Titulo Noticia</h6>
+
+                  <p class="card-text">
+                    Aqui irá ter a descrição da noticia com a descrição base da
+                    noticia para o usuário ter uma base de qual o tema de
+                    noticia está sendo publicado.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <p>
+                        <a href="view-news.html" class="btn my-2 news-view"
+                          >Visualizar</a
+                        >
+                      </p>
+                      <p>
+                        <a href="edit-news.html" class="btn my-2 news-update"
+                          >Editar</a
+                        >
+                      </p>
+                    </div>
+                    <small class="text-body-secondary">22/11/2023</small>
                   </div>
                 </div>
               </div>

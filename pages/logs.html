@@ -6,11 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.118.2" />
+
     <title>Logs</title>
 
     <link
@@ -18,6 +14,11 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
     <style>
@@ -32,6 +33,10 @@
         font-size: 18px;
         text-decoration: inherit;
       }
+      .icon {
+        color: white;
+        font-size: 18px;
+      }
     </style>
   </head>
 
@@ -44,21 +49,37 @@
 
     <header data-bs-theme="dark">
       <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex align-items-center justify-content-start">
-          <a
-            href="news.html"
-            class="navbar-brand d-flex align-items-center navbar-title"
-          >
-            <image
-              class="mx-3"
-              src="../assets/bons-fluidos-logo.png"
-              width="60"
-            ></image>
-          </a>
+        <div
+          class="container d-flex align-items-center justify-content-space-between"
+        >
+          <div class="d-flex align-items-center">
+            <a
+              href="news.html"
+              class="navbar-brand d-flex align-items-center navbar-title"
+            >
+              <image
+                class="mx-3"
+                src="../assets/bons-fluidos-logo.png"
+                width="60"
+              ></image>
+            </a>
 
-          <a href="news.html" class="navbar-title mx-3">Notícias</a>
-          <a href="about.html" class="navbar-title mx-3">Sobre</a>
-          <a href="logs.html" class="navbar-title mx-3">Logs</a>
+            <a href="news.html" class="navbar-title mx-3">
+              <i class="bi-newspaper icon mx-2"></i>
+              Notícias</a
+            >
+
+            <a href="about.html" class="navbar-title mx-3">
+              <i class="bi-info-circle icon mx-2"></i>Sobre</a
+            >
+            <a href="logs.html" class="navbar-title mx-3">
+              <i class="bi-person-lines-fill icon mx-2"></i>Logs</a
+            >
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi-box-arrow-in-left icon"></i>
+            <a href="sign-in.html" class="navbar-title mx-2">Sair</a>
+          </div>
         </div>
       </div>
     </header>
